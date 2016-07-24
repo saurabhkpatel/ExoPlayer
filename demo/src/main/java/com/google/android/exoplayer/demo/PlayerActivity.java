@@ -122,7 +122,7 @@ public class PlayerActivity extends Activity implements SurfaceHolder.Callback, 
   private boolean playerNeedsPrepare;
 
   private long playerPosition;
-  private boolean enableBackgroundAudio;
+  private boolean enableBackgroundAudio = true;
 
   private Uri contentUri;
   private int contentType;
@@ -227,6 +227,7 @@ public class PlayerActivity extends Activity implements SurfaceHolder.Callback, 
     } else {
       player.setBackgrounded(false);
     }
+    shutterView.setVisibility(View.GONE);
   }
 
   @Override
