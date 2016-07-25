@@ -227,7 +227,6 @@ public class PlayerActivity extends Activity implements SurfaceHolder.Callback, 
     } else {
       player.setBackgrounded(false);
     }
-    shutterView.setVisibility(View.GONE);
   }
 
   @Override
